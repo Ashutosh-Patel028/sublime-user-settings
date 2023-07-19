@@ -1,0 +1,25 @@
+//Key Bindings
+[
+	{"keys":["ctrl+alt+c"],"command":"cancel_build"},
+	{ "keys": ["alt+up"], "command": "swap_line_up" },
+	{ "keys": ["alt+down"], "command": "swap_line_down" },
+	{"keys": ["ctrl+shift+down"], "command": "duplicate_line"},
+	{
+		"keys":["alt+t"],
+		"command": "terminus_open",
+		"args": {
+			"cmd": "cmd.exe",
+			"cwd": "${file_path:${folder}}",
+			"panel_name": "Terminus"
+		}
+	},
+
+	{
+		"keys": ["alt+,"],"command":"terminus_close",
+		"context": [{"key":"terminus_view"}]
+	},
+
+	{
+		"keys": ["ctrl+alt+m"], "command": "toggle_menu"
+	}
+]
